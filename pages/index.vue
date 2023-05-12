@@ -1,6 +1,5 @@
 <template>
   <main class="main">
-    
     <div class="main__container">
       <h2 class="main__container__subtitle subtitle">Dernier épisode</h2>
       <h1 class="main__container__title title">Katana VS tronçonneuse</h1>
@@ -9,7 +8,7 @@
       </h3>
       <img
         class="main__container__img"
-        src="../medias/Chainsaw-Man-episode-12-1600x900.jpg"
+        src="/medias/Chainsaw-Man-episode-12-1600x900.jpg"
         alt=" combat tronçonneuse VS katana"
       />
     </div>
@@ -17,7 +16,6 @@
 </template>
 
 <style scoped lang="scss">
-
 .main {
   max-width: 100%;
 
@@ -79,4 +77,4 @@
 
 <script>
 
-;</script>
+</script>
