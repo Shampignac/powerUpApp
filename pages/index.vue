@@ -29,8 +29,8 @@
 
 <style scoped lang="scss">
 .carousel__item {
-  font-size: 20px;
   border-radius: 8px;
+  padding: none;
 }
 
 .carousel__slide {
@@ -44,7 +44,6 @@
 }
 .main {
   max-width: 100%;
-  margin: 0;
 
   &__container {
     margin: 0 5em;
@@ -72,6 +71,35 @@
     }
   }
 }
+
+@media screen and (max-width: 800px) {
+  .main {
+    &__container {
+      margin: 0 1em;
+      grid-template-columns: 1fr;
+      grid-template-rows: 2em 4em auto 1fr;
+      grid-template-areas:
+        "subtitle"
+        "title"
+        "img"
+        "subsubtitle";
+      &__subtitle {
+        grid-area: subtitle;
+      }
+      &__title {
+        grid-area: title;
+      }
+      &__img {
+        grid-area: img;
+        max-width: 100%;
+      }
+      &__subsubtitle {
+        grid-area: subsubtitle;
+      }
+    }
+  }
+}
+
 </style>
 
 <script>
@@ -93,21 +121,22 @@ export default defineComponent({
       images: [
         {
           id: 1,
-          src: "medias/55722-Power-Chainsaw-ManPower-Chainsaw-Man-HD-Wallpaper.jpg",
+          src: "./medias/chainsaw-man-episode-7.png",
           alt: "Power personnage",
         },
         {
           id: 2,
-          src: "medias/aki-Chainsawman.jpg",
+          src: "./medias/Chainsaw-Man-Saison-1-episode-1-1600x900.jpg",
           alt: "Image 2 alt text here",
         },
         {
           id: 3,
-          src: "medias/Chainsaw-Man-episode-2-780x439.jpg",
+          src: "./medias/Chainsaw-Man-episode-12-1600x900.jpg",
           alt: "Image 3 alt text here",
         },
       ],
     };
   },
 });
+
 </script>

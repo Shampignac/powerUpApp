@@ -60,6 +60,7 @@
       font-size: large;
       list-style-type: none;
       padding: 1.5em 2em;
+      margin: none;
       :hover {
         color: bisque;
       }

@@ -34,7 +34,6 @@
   </footer>
 </template>
 <style lang="scss">
-
 .footer {
   background-color: #eeb314;
   color: #cf7007;
@@ -42,8 +41,13 @@
   margin: 0;
 
   &__wrapper {
-    display: inline-grid;
-    grid-template-columns: 250px 20em;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+
+    @media (min-width: 800px) {
+      grid-template-columns: 250px 30em;
+    }
   }
 
   &__container {
@@ -63,6 +67,7 @@
         display: flex;
         flex-direction: column;
         padding: 15px 0;
+        font-size: 2em;
       }
     }
   }
@@ -74,7 +79,11 @@
     &__img {
       mix-blend-mode: multiply;
       max-width: 100%;
-      margin-left: 40em;
+      margin-left: 30em;
+
+      @media (max-width: 768px) {
+        margin-left: 0;
+      }
     }
   }
 }
@@ -83,4 +92,3 @@ a {
   color: #cf7007;
 }
 </style>
-

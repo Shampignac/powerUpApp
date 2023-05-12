@@ -3,6 +3,7 @@
     <div class="main__container container">
       <H1 class="main__container__title"> Nous contacter</H1>
     </div>
+    <div class="parallax"></div>
     <form>
       <div class="form-group">
         <label for="email">Email:</label>
@@ -28,6 +29,14 @@
   </main>
 </template>
 <style scoped lang="scss">
+.parallax {
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url("public/medias/Power-bandw.jpg");
+  height: 50em;
+}
 .main {
   &__container {
     &__title {
@@ -49,6 +58,7 @@ form {
   flex-direction: row;
   align-items: center;
   margin-bottom: 1em;
+  margin-top: 3em;
 }
 
 label {

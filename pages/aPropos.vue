@@ -2,13 +2,7 @@
   <main>
     <div class="main__container container">
       <H1 class="main__container__title"> a propos</H1>
-      <parallax-element :parallaxStrength="-5" :type="'translation'">
-        <img
-          class="main__container_img"
-          src="../public/medias/Screen-Shot-2022-11-15-at-1.11.12-PM-e1668540813864-1024x682.jpg"
-          alt=""
-        />
-      </parallax-element>
+      <div class="parallax"></div>
       <p class="main__container__text text">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin cursus
         eget orci ut pulvinar. Fusce rutrum purus eu augue pellentesque mattis.
@@ -34,20 +28,32 @@
   </main>
 </template>
 <style scoped lang="scss">
+.parallax {
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url("public/medias/Screen-Shot-2022-11-15-at-1.11.12-PM-e1668540813864-1024x682.jpg");
+  height: 50em;
+}
 .main {
   height: 100%;
   &__container {
     &__img {
       display: flex;
+      object-fit: cover;
     }
     &__title {
-      font-size: 5em;
-      padding-left: 1em;
+      font-size: 8em;
+      padding: 0.5em;
     }
     &__text {
       background-color: white;
       height: 100%;
       padding-left: 2em;
+      padding-right: 2em;
+      font-weight: 300;
+      font-size: x-large;
     }
   }
 }
