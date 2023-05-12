@@ -10,10 +10,36 @@
         <div class="main__container__img2__text2">Denji</div>
       </div>
     </div>
-    
+    <div class="arrow-container">
+      <div class="left-arrow"></div>
+      <div class="right-arrow"></div>
+    </div>
   </main>
 </template>
 <style scoped lang="scss">
+.arrow-container {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.left-arrow,
+.right-arrow {
+  width: 0;
+  height: 0;
+  border-top: 20px solid transparent;
+  border-bottom: 20px solid transparent;
+}
+
+.left-arrow {
+  border-right: 20px solid #eeb314;
+}
+
+.right-arrow {
+  border-left: 20px solid #eeb314;
+}
 .main {
   &__container {
     &__img {
@@ -41,6 +67,4 @@
     }
   }
 }
-
-
 </style>
