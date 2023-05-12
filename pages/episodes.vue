@@ -6,7 +6,7 @@
       <h3 class="main__container__subsubtitle subsubtitle">Chapitres 1</h3>
       <img
         class="main__container__img"
-        src="./medias/Chainsaw-Man-Saison-1-episode-1-1600x900.jpg"
+        src="../public/medias/Chainsaw-Man-Saison-1-episode-1-1600x900.jpg"
         alt=" face a face chien tronçoneuse et héros"
       />
     </div>
@@ -18,7 +18,7 @@
       </h3>
       <img
         class="main__container__img"
-        src="./medias/Chainsaw-Man-episode-2-780x439.jpg"
+        src="../public/medias/Chainsaw-Man-episode-2-780x439.jpg"
         alt=" face a face chien tronçoneuse et héros"
       />
     </div>
