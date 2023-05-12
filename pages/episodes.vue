@@ -6,7 +6,7 @@
       <h3 class="main__container__subsubtitle subsubtitle">Chapitres 1</h3>
       <img
         class="main__container__img"
-        src="./medias/Chainsaw-Man-Saison-1-episode-1-1600x900.jpg"
+        src="../medias/Chainsaw-Man-Saison-1-episode-1-1600x900.jpg"
         alt=" face a face chien tronçoneuse et héros"
       />
     </div>
@@ -18,9 +18,13 @@
       </h3>
       <img
         class="main__container__img"
-        src="./medias/Chainsaw-Man-episode-2-780x439.jpg"
+        src="../medias/Chainsaw-Man-episode-2-780x439.jpg"
         alt=" face a face chien tronçoneuse et héros"
       />
+    </div>
+    <div class="arrow-container">
+      <div class="left-arrow"></div>
+      <div class="right-arrow"></div>
     </div>
   </main>
 </template>
@@ -83,5 +87,28 @@
       margin-left: 1em;
     }
   }
+}
+.arrow-container {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.left-arrow,
+.right-arrow {
+  width: 0;
+  height: 0;
+  border-top: 20px solid transparent;
+  border-bottom: 20px solid transparent;
+}
+
+.left-arrow {
+  border-right: 20px solid #eeb314;
+}
+
+.right-arrow {
+  border-left: 20px solid #eeb314;
 }
 </style>
