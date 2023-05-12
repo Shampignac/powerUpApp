@@ -26,7 +26,7 @@
       <div class="footer__container2 container2">
         <img
           class="footer__container2__img"
-          src="../medias/wp9532701.webp"
+          src="../public/medias/wp9532701.webp"
           alt="le chien tronçoneuse"
         />
       </div>
