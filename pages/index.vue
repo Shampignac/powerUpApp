@@ -1,5 +1,14 @@
 <template>
   <main class="main">
+    <div class="carousel-wrapper">
+      <div class="carousel-container">
+        <div class="carousel">
+          <div class="image-one"></div>
+          <div class="image-two"></div>
+          <div class="image-three"></div>
+        </div>
+      </div>
+    </div>
     <div class="main__container">
       <h2 class="main__container__subtitle subtitle">Dernier épisode</h2>
       <h1 class="main__container__title title">Katana VS tronçonneuse</h1>
@@ -16,6 +25,115 @@
 </template>
 
 <style scoped lang="scss">
+$size-width: 1300px;
+$size-height: 500px;
+
+.carousel-wrapper {
+  width: $size-width * 1.3;
+  height: $size-height * 1.4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 5px 5px 25px 0px rgba(46, 61, 73, 0.2);
+  border-radius: 20px;
+  margin: 100px auto 20px;
+}
+
+.carousel-container {
+  width: $size-width;
+  height: $size-height;
+  overflow: hidden;
+  margin: 0 auto;
+}
+
+.carousel {
+  display: flex;
+  width: $size-width * 3;
+  animation: sliding 12s infinite;
+  div {
+    width: $size-width;
+    height: $size-height;
+    background-size: cover;
+    background-position: center;
+  }
+  &:hover {
+    animation-play-state: paused;
+  }
+  .image-one {
+    background-image: url("../public/medias/Chainsaw-Man-episode-12-1600x900.jpg");
+  }
+  .image-two {
+    background-image: url("../public/medias/Chainsaw-Man-episode-2-780x439.jpg");
+  }
+  .image-three {
+    background-image: url("../public/medias/chainsaw-man-episode-7.png");
+  }
+}
+
+@keyframes sliding {
+  30% {
+    transform: translateX(0);
+  }
+  35% {
+    transform: translateX(-$size-width);
+  }
+  65% {
+    transform: translateX(-$size-width);
+  }
+  70% {
+    transform: translateX(-$size-width * 2);
+  }
+  98% {
+    transform: translateX(-$size-width * 2);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  $size-width: 240px;
+  $size-height: 150px;
+  .carousel-wrapper {
+    width: $size-width * 1.3;
+    height: $size-height * 1.4;
+  }
+
+  .carousel-container {
+    width: $size-width;
+    height: $size-height;
+  }
+
+  .carousel {
+    width: $size-width * 3;
+    > div {
+      width: $size-width;
+      height: $size-height;
+    }
+  }
+
+  @keyframes sliding {
+    30% {
+      transform: translateX(0);
+    }
+    35% {
+      transform: translateX(-$size-width);
+    }
+    65% {
+      transform: translateX(-$size-width);
+    }
+    70% {
+      transform: translateX(-$size-width * 2);
+    }
+    98% {
+      transform: translateX(-$size-width * 2);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
+}
+
 .main {
   max-width: 100%;
 
@@ -75,6 +193,4 @@
 }
 </style>
 
-<script>
-
-</script>
+<script></script>
