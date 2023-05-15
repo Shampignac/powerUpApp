@@ -17,15 +17,15 @@
         Chapitres 2-3-4-5
       </h3>
       <img
-        class="main__container__img"
+        class="main__container2__img"
         src="../public/medias/Chainsaw-Man-episode-2-780x439.jpg"
-        alt=" face a face chien tronçoneuse et héros"
+        alt=" Makima héroïne chainsaw man"
       />
     </div>
     <div class="arrow-container">
-  <div class="left-arrow"></div>
-  <div class="right-arrow"></div>
-</div>
+      <div class="left-arrow"></div>
+      <div class="right-arrow"></div>
+    </div>
   </main>
 </template>
 <style scoped lang="scss">
@@ -37,7 +37,8 @@
   margin: 0 auto;
 }
 
-.left-arrow, .right-arrow {
+.left-arrow,
+.right-arrow {
   width: 0;
   height: 0;
   border-top: 20px solid transparent;
@@ -59,11 +60,12 @@
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: 2em 4em 1fr;
     grid-column-gap: 0px;
-    grid-row-gap: 0px;
+    grid-row-gap: 40px;
 
     &__subtitle {
       grid-area: 1 / 1 / 2 / 2;
       color: white;
+      font-size: 3em;
     }
     &__title {
       grid-area: 2 / 1 / 3 / 2;
@@ -72,41 +74,48 @@
     }
     &__img {
       grid-area: 3 / 1 / 4 / 2;
-      max-width: 30em;
+      max-width: 50em;
+      justify-self: end;
+      padding-left: 2em;
+      padding-bottom: 4em;
     }
     &__subsubtitle {
-      grid-area: 3 / 2 / 4 / 3;
-      font-size: 2em;
+      grid-area: 2 / 3 / 4 / 3;
+      font-size: 3em;
     }
   }
   &__container2 {
-    margin: 1em 5em;
+    margin: 0 5em;
     background-image: linear-gradient(to bottom, #eeb314 250px, #f0f4f4 250px);
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: 2em 4em 1fr;
     grid-column-gap: 0px;
-    grid-row-gap: 0px;
+    grid-row-gap: 40px;
 
     &__subtitle {
       grid-area: 1 / 2 / 2 / 2;
       color: white;
+      justify-self: end;
+      font-size: 3em;
     }
     &__title {
       grid-area: 2 / 2 / 3 / 2;
       font-weight: bolder;
       font-size: 2em;
+      justify-self: end;
     }
-
-    &__subsubtitle {
-      grid-area: 3 / 1 / 4 / 3;
-      font-size: 2em;
-    }
-
     &__img {
-      grid-area: 1 / 2 / 4 / 3;
-      max-width: 30em;
-      margin-left: 1em;
+      grid-area: 3 / 2 / 4 / 2;
+      max-width: 50em;
+      justify-self: center;
+      padding-right: 2em;
+      padding-bottom: 4em;
+    }
+    &__subsubtitle {
+      grid-area: 2 / 1 / 2 / 3;
+      font-size: 3em;
+      justify-self: start;
     }
   }
 }

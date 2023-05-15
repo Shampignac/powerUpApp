@@ -29,7 +29,7 @@ $size-width: 1300px;
 $size-height: 500px;
 
 .carousel-wrapper {
-  width: $size-width * 1.3;
+  width: cover;
   height: $size-height * 1.4;
   display: flex;
   justify-content: center;
@@ -144,23 +144,28 @@ $size-height: 500px;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: 2em 4em 1fr;
     grid-column-gap: 0px;
-    grid-row-gap: 0px;
+    grid-row-gap: 40px;
+
     &__subtitle {
       grid-area: 1 / 1 / 2 / 2;
+      color: white;
+      font-size: 3em;
     }
     &__title {
       grid-area: 2 / 1 / 3 / 2;
-      font-size: xx-large;
+      font-weight: bolder;
+      font-size: 2em;
     }
     &__img {
       grid-area: 3 / 1 / 4 / 2;
+      max-width: 50em;
+      justify-self: end;
+      padding-left: 2em;
+      padding-bottom: 4em;
     }
     &__subsubtitle {
-      grid-area: 3 / 2 / 4 / 3;
-    }
-
-    &__img {
-      max-width: 30em;
+      grid-area: 2 / 3 / 4 / 3;
+      font-size: 3em;
     }
   }
 }

@@ -42,8 +42,8 @@
 
   &__wrapper {
     display: grid;
-    grid-template-columns: 1fr;
-    gap: 20px;
+    grid-template-columns: 1fr 1fr;
+    gap: 750px;
 
     @media (min-width: 800px) {
       grid-template-columns: 250px 30em;
@@ -72,18 +72,9 @@
     }
   }
   &__container2 {
-    display: flex;
-    justify-content: center;
-    align-items: flex-end;
-
     &__img {
       mix-blend-mode: multiply;
       max-width: 100%;
-      margin-left: 30em;
-
-      @media (max-width: 768px) {
-        margin-left: 0;
-      }
     }
   }
 }
