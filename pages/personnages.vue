@@ -64,7 +64,7 @@
         font-size: 6em;
         padding: 2em;
         font-weight: 500;
-        padding-left: 13em;
+        padding-left: 12em;
       }
     }
   }
