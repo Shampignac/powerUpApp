@@ -3,7 +3,9 @@
     <div class="main__container container">
       <H1 class="main__container__title"> Nous contacter</H1>
     </div>
-    <div class="parallax"></div>
+    <div class="parallax">
+      
+    </div>
     <form>
       <div class="form-group">
         <label for="email">Email:</label>
