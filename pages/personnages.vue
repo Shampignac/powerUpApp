@@ -23,6 +23,7 @@
   width: 100%;
   max-width: 500px;
   margin: 0 auto;
+  padding: 1em;
 }
 
 .left-arrow,
@@ -46,6 +47,7 @@
       background-image: url("../public/medias/Chainsaw-Man-Makima-2.webp");
       background-size: cover;
       height: 50em;
+
       &__text {
         color: white;
         font-size: 6em;
