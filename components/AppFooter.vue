@@ -43,7 +43,7 @@
   &__wrapper {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 750px;
+    gap: 650px;
 
     @media (min-width: 800px) {
       grid-template-columns: 250px 30em;
